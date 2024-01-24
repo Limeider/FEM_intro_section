@@ -30,14 +30,15 @@ menuOpen.addEventListener("click", function () {
 })
 
 menuClose.addEventListener("click", function () {
-    backDrop.classList.remove("show")
-    menuClose.classList.remove("show")
-    navItemsContainer.classList.remove("show")
-    menuOpen.style.display = "block"
+    menuCloseBehavior()
 })
 
 featuresAnchor.addEventListener("click", () => toggleIfMenuOpen(featuresSubMenu))
 companyAnchor.addEventListener("click", () => toggleIfMenuOpen(companySubMenu))
+
+window.addEventListener("orientationchange", function () {
+    menuCloseBehavior()
+})
 
 // Functions
 function toggleArrows(downArrow, upArrow) {
@@ -49,4 +50,11 @@ function toggleIfMenuOpen(subMenu) {
     if (menuClose.classList.contains("show")) {
         subMenu.classList.toggle("show")
     }
+}
+
+function menuCloseBehavior() {
+    backDrop.classList.remove("show")
+    menuClose.classList.remove("show")
+    navItemsContainer.classList.remove("show")
+    menuOpen.style.display = "block"
 }

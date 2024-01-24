@@ -191,8 +191,7 @@ a {
         right: 0;
         background-color: var(--primary-color);
         width: 65%;
-        height: 100vh;
-        height: 100dvh;
+        height: 100%;
         z-index: 10;
         align-items: start;
         padding-top: 5rem;
@@ -241,4 +240,8 @@ a {
     .mobile-menu-open, .mobile-menu-close {
         z-index: 100;
     }
+}
+
+@media only screen and (max-width:799px) and (orientation:landscape) {
+
 }
