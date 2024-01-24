@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <script defer src="./main.js"></script>
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+
+<body>
+  <header>
+    <nav class="main-nav" role="navigation">
+      <img class="logo" src="./images/logo.svg" alt="website logo" aria-hidden="true">
+      <img id="menu-open" class="mobile-menu-open" src="./images/icon-menu.svg" alt="menu open icon" aria-label="Toggle Navigation"
+        aria-controls="mobile-menu" aria-expanded="false">
+      <img id="menu-close" class="mobile-menu-close" src="./images/icon-close-menu.svg" alt="menu close icon" aria-expanded="true"
+        aria-controls="mobile-menu" aria-label="Close Mobile Menu">
+      <div class="nav-items-container">
+        <ul class="main-menu" role="menu">
+          <li class="menu-item dropdown" role="menuitem" aria-haspopup="true" aria-expanded="false">
+            <div class="menu-item-content">
+              <a id="features" href="#">Features</a>
+              <img id="features-down-arrow" class="arrow-icon show" src="./images/icon-arrow-down.svg" alt="down arrow" aria-hidden="true">
+              <img id="features-up-arrow" class="arrow-icon" src="./images/icon-arrow-up.svg" alt="up arrow" aria-hidden="true">
+            </div>
+            <ul class="sub-menu features-sub-menu" role="menu">
+              <li class="sub-menu-item" role="menuitem"><img src="./images/icon-todo.svg" alt="Todo list icon"
+                  aria-hidden="true"><a href="#">Todo List</a></li>
+              <li class="sub-menu-item" role="menuitem"><img src="./images/icon-calendar.svg" alt="Calendar icon"
+                  aria-hidden="true"><a href="#">Calendar</a></li>
+              <li class="sub-menu-item" role="menuitem"><img src="./images/icon-reminders.svg" alt="Reminder icon"
+                  aria-hidden="true"><a href="#">Reminders</a></li>
+              <li class="sub-menu-item" role="menuitem"><img src="./images/icon-planning.svg" alt="Planning icon"
+                  aria-hidden="true"><a href="#">Planning</a></li>
+            </ul>
+          </li>
+          <li class="menu-item dropdown" role="menuitem" aria-haspopup="true" aria-expanded="false">
+            <div class="menu-item-content">
+              <a id="company" href="#">Company</a>
+              <img id="company-down-arrow" class="arrow-icon show" src="./images/icon-arrow-down.svg" alt="down arrow" aria-hidden="true">
+              <img id="company-up-arrow" class="arrow-icon" src="./images/icon-arrow-up.svg" alt="up arrow" aria-hidden="true">
+            </div>
+            <ul class="sub-menu company-sub-menu" role="menu">
+              <li class="sub-menu-item" role="menuitem"><a href="#">History</a></li>
+              <li class="sub-menu-item" role="menuitem"><a href="#">Our Team</a></li>
+              <li class="sub-menu-item" role="menuitem"><a href="#">Blog</a></li>
+            </ul>
+          </li>
+          <li class="menu-item" role="menuitem"><a href="#">Careers</a></li>
+          <li class="menu-item" role="menuitem"><a href="#">About</a></li>
+        </ul>
+        <div class="right-nav-btns">
+          <button class="btn nav-btn">Login</button>
+          <button class="btn nav-btn nav-btn-border">Register</button>
+        </div>
+      </div>
+      <div class="backdrop"></div>
+    </nav>
+  </header>
+
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>
