@@ -191,7 +191,7 @@ a {
         right: 0;
         background-color: var(--primary-color);
         width: 65%;
-        height: 100%;
+        min-height: 100%;
         z-index: 10;
         align-items: start;
         padding-top: 5rem;
